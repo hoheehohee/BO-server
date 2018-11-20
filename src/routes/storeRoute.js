@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
           name: p.name
         }
         // storeMapper.selStoreList(params, callback);
-        BOUtil.uuid('tttt');
+        Logger.d(BOUtil.uuid('tttt'));
       }, 
       (result, objParams) => {
         send(res, result.data);
